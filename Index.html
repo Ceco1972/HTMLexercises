@@ -49,6 +49,9 @@
             } else
             {
                 const el = arr[index-1];
+                const el2 = arr[index];
+                el2.classList.remove("active");
+                el2.classList.add("inactive");
                 el.classList.remove("inactive");
                 el.classList.add("active");
             }
