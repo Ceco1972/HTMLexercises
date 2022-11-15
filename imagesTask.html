@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kittens</title>
+        <link rel="stylesheet" href="Styles.css">
+
+</head>
+<body>
+    <img src="Kitten1.jfif" alt="kitten1">
+    <img src="Kitten2.jfif" alt="kitten2">
+    <img src="Kitten3.jfif" alt="kitten3">
+    <img src="Kitten5.jfif" alt="Kitten5">
+    <img src="Kitten6.jfif" alt="Kitten6">
+    <img src="Kitten7.jfif" alt="Kitten7">
+    <img src="Kitten2.jfif" alt="Kitten2">
+<div>
+    what do you think
+</div>
+    <script>
+        const imageshover = document.getElementsByTagName("img");
+        
+        for (let index = 0; index < imageshover.length; index++) {
+            imageshover[index].addEventListener('click', function()
+            {
+            imageshover[index].style = "border:5px solid yellow;width: 350px; height: 350px;";
+            })
+        }
+      
+    </script>
+</body>
+</html>
