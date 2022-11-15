@@ -9,26 +9,50 @@
 
 </head>
 <body>
-    <img src="Kitten1.jfif" alt="kitten1">
-    <img src="Kitten2.jfif" alt="kitten2">
-    <img src="Kitten3.jfif" alt="kitten3">
-    <img src="Kitten5.jfif" alt="Kitten5">
-    <img src="Kitten6.jfif" alt="Kitten6">
-    <img src="Kitten7.jfif" alt="Kitten7">
-    <img src="Kitten2.jfif" alt="Kitten2">
-<div>
-    what do you think
-</div>
+    <img class = "inactive" src="Kitten1.jfif" alt="kitten1">
+    <img class = "inactive"src="Kitten2.jfif" alt="kitten2">
+    <img class = "inactive"src="Kitten3.jfif" alt="kitten3">
+    <img class = "inactive"src="Kitten5.jfif" alt="Kitten5">
+    <img class = "inactive"src="Kitten6.jfif" alt="Kitten6">
+    <img class = "inactive"src="Kitten7.jfif" alt="Kitten7">
+    <img class = "inactive"src="Kitten2.jfif" alt="Kitten2">
+    <div class="but">
+        <button id="left" type="button">LEFT</button>
+        <button id="right" type="button">RIGHT</button>
+    </div>
+
     <script>
         const imageshover = document.getElementsByTagName("img");
-        
+        const buttonLeft = document.getElementById("left");
+        const buttonRight = document.getElementById("right");
+
         for (let index = 0; index < imageshover.length; index++) {
             imageshover[index].addEventListener('click', function()
             {
-            imageshover[index].style = "border:5px solid yellow;width: 350px; height: 350px;";
+                imageshover[index].classList.toggle("inactive");
+                imageshover[index].classList.toggle("active");
+                //imageshover[index].style = "border:5px solid yellow;width: 350px; height: 350px;";
             })
         }
-      
+        const arr = [...imageshover];
+        buttonLeft.addEventListener("click", function()
+        {
+            const index = arr.findIndex(img=>img.classList.contains("active"));
+            if(index===0)
+            {
+                const elem = arr[arr.length-1];
+                const elem2 = arr[index];
+                elem2.classList.remove("active");
+                elem2.classList.add("inactive");
+                elem.classList.remove("inactive");
+                elem.classList.add("active");
+            } else
+            {
+                const el = arr[index-1];
+                el.classList.remove("inactive");
+                el.classList.add("active");
+            }
+        })
     </script>
 </body>
 </html>
