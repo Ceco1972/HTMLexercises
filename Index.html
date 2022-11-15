@@ -53,6 +53,28 @@
                 el.classList.add("active");
             }
         })
+
+        buttonRight.addEventListener("click", function()
+        {
+            const index = arr.findIndex(img=>img.classList.contains("active"));
+            if(index===arr.length-1)
+            {
+                const elem = arr[0];
+                const elem2 = arr[index];
+                elem2.classList.remove("active");
+                elem2.classList.add("inactive");
+                elem.classList.remove("inactive");
+                elem.classList.add("active");
+            } else
+            {
+                const el = arr[index+1];
+                el.classList.remove("inactive");
+                el.classList.add("active");
+            }
+        })
+
+        
+
     </script>
 </body>
 </html>
