@@ -1,0 +1,105 @@
+.countdown {
+    background: #0049ab;
+    color: #fff;
+    padding: 35px 0;
+    text-align: center;
+    overflow: hidden; }
+    .countdown__msg {
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+      font-size: 1.5rem; }
+      .countdown__msg > p,
+      .countdown__msg > div {
+        display: inline-block;
+        vertical-align: middle; }
+      .countdown__msg--after {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+        visibility: hidden;
+        height: 0; }
+        .countdown--zero .countdown__msg--after {
+          opacity: 1;
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+          visibility: visible;
+          height: auto; }
+      .countdown__msg--before {
+        opacity: 1; }
+        .countdown--zero .countdown__msg--before {
+          opacity: 0;
+          -webkit-transform: translateY(-100%);
+                  transform: translateY(-100%);
+          visibility: hidden;
+          height: 0; }
+    .countdown__countdown {
+      display: block;
+      width: 312px;
+      overflow: hidden;
+      position: relative;
+      padding-bottom: 20px;
+      margin: 20px auto 0;
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+      opacity: 1; }
+      .countdown--zero .countdown__countdown {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+        visibility: hidden;
+        margin-top: -60px; }
+    .countdown__def {
+      margin: 0;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: -5px;
+      font-size: 0.75rem; }
+    .countdown__term {
+      position: relative;
+      color: #0049ab;
+      letter-spacing: 10px;
+      line-height: 38px;
+      display: block;
+      float: left;
+      width: 65px;
+      margin-right: 17px;
+      font-size: 1.5rem; }
+      .countdown__term::after, .countdown__term::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 38px;
+        background: #fff;
+        border-radius: 4px; }
+      .countdown__term::after {
+        left: auto;
+        right: 0; }
+      .countdown__term:last-of-type {
+        margin-right: 0; }
+        .countdown__term:last-of-type .countdown__value::after {
+          display: none; }
+      .countdown__term--days + .countdown__def {
+        left: 19px; }
+      .countdown__term--hours + .countdown__def {
+        left: 95px; }
+      .countdown__term--minutes + .countdown__def {
+        left: 171px; }
+      .countdown__term--seconds + .countdown__def {
+        right: 6px; }
+    .countdown__value {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 66px;
+      letter-spacing: 23px;
+      padding: 0 0 0 9px; }
+      .countdown__value::after {
+        content: ':';
+        position: absolute;
+        letter-spacing: 0;
+        top: -3px;
+        right: -11px;
+        color: #fff; }

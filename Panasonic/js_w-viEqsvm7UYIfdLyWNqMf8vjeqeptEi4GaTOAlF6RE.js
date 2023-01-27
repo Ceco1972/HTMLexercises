@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at https://na.panasonic.com/us/modules/custom/pna_webform/js/gclid.js. */
+function getGclid(){var gclidFields=document.querySelectorAll('[name="gclid_id"]');var fieldValue=(name=new RegExp('(?:^|;\\s*)gclid=([^;]*)').exec(document.cookie))?name.split(',')[1]:'';if(gclidFields.length){for(var i=0;i<gclidFields.length;i++){var field=gclidFields[i];field.value=fieldValue;}}};window.addEventListener('load',getGclid,false);
+/* Source and licensing information for the above line(s) can be found at https://na.panasonic.com/us/modules/custom/pna_webform/js/gclid.js. */;

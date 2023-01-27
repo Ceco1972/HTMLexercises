@@ -1,0 +1,77 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3516782, 2018-01-26T13:09:54-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: FF DIN Web Pro Light by FontFont
+ * URL: https://www.myfonts.com/fonts/fontfont/ff-din/pro-light/
+ * Copyright: 2016 published by Monotype GmbH
+ *
+ * Webfont: FF DIN Web Pro Regular by FontFont
+ * URL: https://www.myfonts.com/fonts/fontfont/ff-din/pro-regular/
+ * Copyright: 2016 published by Monotype GmbH
+ *
+ * Webfont: FF DIN Web Pro Medium by FontFont
+ * URL: https://www.myfonts.com/fonts/fontfont/ff-din/pro-medium/
+ * Copyright: 2005 Albert-Jan Pool published by FSI FontShop International GmbH
+ *
+ * Webfont: FF DIN Web Pro Bold by FontFont
+ * URL: https://www.myfonts.com/fonts/fontfont/ff-din/pro-bold/
+ * Copyright: 2016 published by Monotype GmbH
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3516782
+ * Licensed pageviews: 500,000
+ *
+ * Â© 2018 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("/count/35a96e");
+
+
+@font-face {
+  font-family: 'DINOT';
+  src: url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_0_0.eot');
+  src: url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_0_0.eot?#iefix') format('embedded-opentype'), url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_0_0.woff2') format('woff2'), url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_0_0.woff') format('woff'), url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_0_0.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DINOT';
+  src: url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_1_0.eot');
+  src: url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_1_0.eot?#iefix') format('embedded-opentype'), url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_1_0.woff2') format('woff2'), url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_1_0.woff') format('woff'), url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_1_0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DINOT';
+  src: url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_2_0.eot');
+  src: url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_2_0.eot?#iefix') format('embedded-opentype'), url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_2_0.woff2') format('woff2'), url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_2_0.woff') format('woff'), url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_2_0.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DINOT';
+  src: url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_3_0.eot');
+  src: url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_3_0.eot?#iefix') format('embedded-opentype'), url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_3_0.woff2') format('woff2'), url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_3_0.woff') format('woff'), url('/us/themes/custom/pna2018/fonts/webfonts/35A96E_3_0.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'DINOT', Arial, Helvetica, Sans-serif;
+}
